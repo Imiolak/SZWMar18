@@ -1,0 +1,19 @@
+{
+	"stepTypes": ["task"],
+	"steps": [
+		{
+			"placeInPart": 1,
+			"stepType": "task",
+			"taskText": "Od Łącznika 4 odbierz \"Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ\". Po dalsze instrukcje zgłoś się do Łącznika 5, który znajduje się przy skrzyżowaniu ulic: Solna Góra i Niecała",
+			"markers": [
+				{
+					"latitude": 49.972147,
+					"longitude": 20.430147,
+					"tooltip" "Solna Góra x Niecałą"
+				}
+			],
+			"password": "Przepraszam, skąd odjeżdża pociąg do Krakowa?",
+			"reply": "Dziś prędzej to można pojechać do Moskwy."
+		}
+	]
+}

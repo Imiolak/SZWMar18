@@ -1,0 +1,26 @@
+{
+	"stepTypes": ["text", "task"],
+	"steps": [
+		{
+			"placeInPart": 1,
+			"stepType": "text",
+			"content": "Po wkroczeniu Armii Czerwonej do Bochni radzieccy żołnierze zachowywali się tak, jak gdyby znajdowali sie na terytorium wroga. W Bochni mnożyły się napady, grabieże i samowole dokonywane przez radzieckich sołdatów. 31 sierpnia 1945 r. radzieccy żołnierze zastrzelili w pobliżu stacji Kłaj dwóch pasażerów pociągu jadącego do Krakowa, we wrześniu 1945 r. spowodowali groźny pożar na posesji przy ul. Wiśnickiej w Bochni, zdewastowali też koszary przy ul. Kazimierza Wielkiego. Jedną z ofiar „wyzwolicieli” był też znany bocheński malarz Marcin Samlicki.
+Zachowanie Armii Czerwonej i przyniesienie przez nią na bagnetach nowej komunistycznej władzy budziło oczywiście chęć oporu. Po rozwiązaniu AK główną organizacją podziemia stało się Zrzeszenie Wolność i Niezawisłość (WIN) utworzone w Warszawie 2 września 1945 r. Celem organizacji, która stawiała początkowo na polityczne metody działania, było odsunięcie komunistów od władzy i zerwanie z zależnością Polski od ZSRR. Kierownictwo WIN-u liczyło na szybki wybuch III wojny światowej, która po pokonaniu ZSRR przez USA miała przynieść Polsce wymarzoną wolność.
+Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel bocheńskiego gimnazjum, a przede wszystkim wybitny pływak z okresu 20-lecia międzywojennego - Jan Kot. Kot odpowiadał w WIN-ie za zbieranie informacji wywiadowczych i to w dużej mierze w wyniku jego oraz jego podwładnych pracy powstał \"Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ\" zawierający informacje o zbrodniach popełnianych przed ZSRR i polskich komunistów na Polakach. W sierpniu 1946 r. Jan Kot został aresztowany w Krakowie i po ciężkim śledztwie, w czasie którego był torturowany, został skazany na trzykrotną karę śmierci, którą zamieniono później na dożywotnie więzienie. W marcu 1957 r. po amnestii spowodowanej tzw. przełomem październikowym Kot odzyskał wolność, jednak bezpieka interesowała się nim jeszcze przez długie lata."
+		},
+		{
+			"placeInPart": 2,
+			"stepType": "task",
+			"taskText": "Udaj się do Krytej Pływalni w Bochni i odnajdź na tablicy poświęconej Janowi Kotowi informację dotyczącą miejsc, w których więziony był Kot. Na podstawie informacji od Łącznika 3 napisz raport (i podpisz kryptonimem drużyny) na temat wydarzeń, które rozegrały się 31 sieprnia 1945 r. na trasie kolejowej między Bochnią a Kłajem. Skontaktować się z Łącznikiem 4, który znajduje się w okolicach Krytej Pływalni. Przekaż mu sporządzony raport oraz pieniądze na działalność konspiracyjną.",
+			"markers": [
+				{
+					"latitude": 49.9764134,
+					"longitude": 20.4316575,
+					"tooltip" "Basen"
+				}
+			],
+			"password": "Przepraszam, która godzina?",
+			"reply": "Niestety nie mam zegarka od stycznia obecnego roku."
+		}
+	]
+}

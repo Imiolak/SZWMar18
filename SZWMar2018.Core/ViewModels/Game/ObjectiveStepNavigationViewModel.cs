@@ -10,7 +10,7 @@ namespace SZWMar2018.Core.ViewModels.Game
     {
         private readonly IDictionary<string, Type> _viewModelTypesByObjectiveStepType = new Dictionary<string, Type>
         {
-            { typeof(TextObjectiveStep).FullName, typeof(TextObjectiveStepViewModel) },
+            { typeof(TextObjectiveStep).FullName, typeof(TextGameStepViewModel) },
             { typeof(QuestionObjectiveStep).FullName, typeof(QuestionObjectiveStepViewModel) },
             { typeof(GoToLocationObjectiveStep).FullName, typeof(GoToLocationObjectiveStepViewModel) }
         };

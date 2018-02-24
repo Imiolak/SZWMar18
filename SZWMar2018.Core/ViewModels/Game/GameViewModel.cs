@@ -13,10 +13,6 @@ namespace SZWMar2018.Core.ViewModels.Game
         {
             _gameStateService = gameStateService;
         }
-        
-        public string ObjNo { get; set; }
-        
-        public string ObjTitle { get; set; }
 
         public IMvxCommand ResetGameCommand => new MvxCommand(ResetGame);
 

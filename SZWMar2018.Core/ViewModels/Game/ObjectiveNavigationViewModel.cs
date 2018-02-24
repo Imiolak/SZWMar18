@@ -10,7 +10,7 @@ namespace SZWMar2018.Core.ViewModels.Game
         public ObjectiveNavigationViewModel(IGameStateService gameStateService)
         {
             _gameStateService = gameStateService;
-            _currentObjective = _gameStateService.GetCurrentActiveObjectiveNo();
+            _currentObjective = _gameStateService.GetCurrentActiveGamePart();
             ShowViewModel<ObjectiveStepNavigationViewModel>(new
             {
                 objectiveNo = _currentObjective

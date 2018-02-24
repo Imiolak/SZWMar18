@@ -3,7 +3,7 @@ using Android.OS;
 using MvvmCross.Droid.Support.V4;
 using SZWMar2018.Core.ViewModels.Game;
 
-namespace SZWMar2018.Droid.Resources.Views.Game
+namespace SZWMar2018.Droid.Views.Game
 {
     [Activity]
     public class GameActivity : MvxCachingFragmentActivity<GameViewModel>

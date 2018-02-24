@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:id="@+id/gameStepNavigationRoot">
+        <Button
+            android:text="Wróć"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/previousStepButton"
+            android:layout_weight="1"
+            local:MvxBind="Click PreviousStepCommand; Visibility Visibility(PreviousStepButtonVisible)" />
+        <Button
+            android:text="Dalej"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nextStepButton"
+            android:layout_weight="1"
+            local:MvxBind="Click NextStepCommand; Visibility Visibility(NextStepButtonVisible)" />
+        <Button
+            android:text="Skanuj kod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/scanCodeButton"
+            android:layout_weight="1"
+            local:MvxBind="Click ScanCodeCommand; Visibility Visibility(ScanCodeButtonVisible)" />
+</LinearLayout>

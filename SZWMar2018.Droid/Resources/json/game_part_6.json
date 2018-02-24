@@ -1,0 +1,24 @@
+{
+	"stepTypes": ["text", "task"],
+	"steps": [
+		{
+			"placeInPart": 1,
+			"stepType": "text",
+			"content": "W lutym 1946 r. powstały w Bochni pierwsze struktury WiN-u. Jego twórcą był zatrudniony w bocheńskich zakładach naczyń kamionkowych na stanowisku buchaltera Feliks \"Lis\" Kornaś. Głównym zadaniem organizacji było zdobywanie informacji o działaniach komunistów oraz udzielanie pomocy PSL w przygotowaniach do referendum ludowego, a później wyborów. Pod koniec 1946 r. działania bocheńskich winowców zamarły, a Lis w 1948 r. przeniósł sie do Wrocławia. W sierpniu 1948 r. Kornaś został aresztowany i po brutalnym śledztwie skazany w 1949 r. na karę 8 lat pozbawienia wolności. W 1956 r. na mocy amnestii niewielka część kary została Lisowi darowana i odzyskal wolność. Bocheńskie komórki WiN-u podlegały bezpośrednio dowództwu w Krakowie, które co najmniej dwa razy dokonało wizyty w Bochni."
+		},
+		{
+			"placeInPart": 2,
+			"stepType": "task",
+			"taskText": "Udaj się do budynku drukarni przy ul. Konstytucji 3 Maja. W budynku weź udział w wizytacji i odprawie, którą przeprowadzi Łącznik 6. Łacznikowi 6 przekazać \"Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ\".",
+			"markers": [
+				{
+					"latitude": 49.9725985,
+					"longitude": 20.427449,
+					"tooltip" "Drukarnia"
+				}
+			],
+			"password": "Przepraszam, szukam szewca.",
+			"reply": "Dobrze się składa, mój stryjek naprawia buty."
+		}
+	]
+}

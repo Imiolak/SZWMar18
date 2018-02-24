@@ -4,22 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/linearLayout1">
+    android:id="@+id/gameViewRoot">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameStepContainer" />
     <fragment
-        class="UrbanGame.Droid.Views.Game.ObjectiveNavigationFragment"
-        android:id="@+id/objectiveNavigationFragment"
+        class="SZWMar2018.Droid.Views.Game.GameStepNavigationFragment"
+        android:id="@+id/gameStepNavigationFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:tag="objectiveNavigationFragment" />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/objectiveStepNavigationContainer">
-    </FrameLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/objectiveStepViewContainer" />
+        android:tag="gameStepNavigationFragment" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"

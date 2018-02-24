@@ -7,9 +7,8 @@ using MvvmCross.Platform.Core;
 using SZWMar2018.Core.Interactions;
 using SZWMar2018.Core.ViewModels.Menu;
 using ZXing.Mobile;
-using Resource = SZWMar2018.Droid.Resource;
 
-namespace UrbanGame.Droid.Resources.Views.Menu
+namespace SZWMar2018.Droid.Views.Menu
 {
     [Activity]
     public class MenuActivity : MvxActivity<MenuViewModel>

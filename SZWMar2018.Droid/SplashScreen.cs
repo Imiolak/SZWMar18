@@ -4,7 +4,7 @@ using MvvmCross.Droid.Views;
 
 namespace SZWMar2018.Droid
 {
-    [Activity(Label = "UrbanGame.Droid", 
+    [Activity(Label = "SZWMar2018", 
         MainLauncher = true, 
         Icon = "@drawable/icon", 
         Theme = "@style/Theme.Splash", 

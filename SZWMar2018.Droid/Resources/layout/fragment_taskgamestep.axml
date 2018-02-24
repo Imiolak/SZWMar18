@@ -3,13 +3,12 @@
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <fragment
-        class="com.google.android.gms.maps.mapfragment"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="placeholder 2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mapFragment"
-        android:tag="gtlMapFragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textObjectiveStepContent"
+        android:singleLine="false"
+        android:nestedScrollingEnabled="true" />
 </LinearLayout>

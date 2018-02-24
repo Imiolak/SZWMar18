@@ -10,8 +10,8 @@
 
         int GetNumberOfObjectives();
 
-        int GetCurrentActiveObjectiveNo();
+        int GetCurrentActiveGamePart();
 
-        void AdvanceToNextObjective();
+        void AdvanceToNextGamePart();
     }
 }

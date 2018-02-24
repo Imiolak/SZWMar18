@@ -9,13 +9,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("SZWMar2018.Droid.Resource", IsApplication = true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("SZWMar2018.Droid.Resource", IsApplication=true)]
 
 namespace SZWMar2018.Droid
 {
-
-
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	
+	
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -26,34 +26,34 @@ namespace SZWMar2018.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = Resource.Attribute.MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = Resource.Attribute.MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = Resource.Attribute.MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = Resource.Attribute.MvxItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = Resource.Attribute.MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = Resource.Attribute.MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = Resource.Attribute.MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = Resource.Id.MvvmCrossTagId;
-			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = Resource.Id.MvxBindingTagUnique;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = Resource.Styleable.MvxBinding;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = Resource.Styleable.MvxBinding_MvxBind;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = Resource.Styleable.MvxBinding_MvxLang;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = Resource.Styleable.MvxControl;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = Resource.Styleable.MvxControl_MvxTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = Resource.Styleable.MvxExpandableListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = Resource.Styleable.MvxImageView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = Resource.Styleable.MvxImageView_MvxSource;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = Resource.Styleable.MvxListView;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
-			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = Resource.String.ApplicationName;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = Resource.String.Hello;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = Resource.String.Hello;
-			global::ZXing.Mobile.Resource.Id.contentFrame = Resource.Id.contentFrame;
-			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = Resource.Layout.zxingscanneractivitylayout;
-			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = Resource.Layout.zxingscannerfragmentlayout;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxBind = global::SZWMar2018.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::SZWMar2018.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxGroupItemTemplate = global::SZWMar2018.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxItemTemplate = global::SZWMar2018.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxLang = global::SZWMar2018.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxSource = global::SZWMar2018.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Attribute.MvxTemplate = global::SZWMar2018.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvvmCrossTagId = global::SZWMar2018.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Binding.Droid.Resource.Id.MvxBindingTagUnique = global::SZWMar2018.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding = global::SZWMar2018.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxBind = global::SZWMar2018.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxBinding_MvxLang = global::SZWMar2018.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl = global::SZWMar2018.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::SZWMar2018.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView = global::SZWMar2018.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::SZWMar2018.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView = global::SZWMar2018.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxImageView_MvxSource = global::SZWMar2018.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::SZWMar2018.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::SZWMar2018.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::SZWMar2018.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::SZWMar2018.Droid.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::SZWMar2018.Droid.Resource.String.Hello;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::SZWMar2018.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::SZWMar2018.Droid.Resource.String.Hello;
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::SZWMar2018.Droid.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::SZWMar2018.Droid.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::SZWMar2018.Droid.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Attribute
@@ -296,7 +296,10 @@ namespace SZWMar2018.Droid
 			public const int Icon = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int splash = 2130837527;
+			public const int menu_background = 2130837527;
+			
+			// aapt resource value: 0x7f020018
+			public const int splash = 2130837528;
 			
 			static Drawable()
 			{
@@ -329,29 +332,41 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070008
 			public const int adjust_width = 2131165192;
 			
-			// aapt resource value: 0x7f070015
-			public const int advanceObjectiveButton = 2131165205;
+			// aapt resource value: 0x7f070014
+			public const int advanceObjectiveButton = 2131165204;
 			
-			// aapt resource value: 0x7f07002d
-			public const int answersRadioGroup = 2131165229;
+			// aapt resource value: 0x7f070031
+			public const int answersRadioGroup = 2131165233;
 			
 			// aapt resource value: 0x7f07000c
 			public const int auto = 2131165196;
 			
-			// aapt resource value: 0x7f07002f
-			public const int contentFrame = 2131165231;
+			// aapt resource value: 0x7f070033
+			public const int contentFrame = 2131165235;
 			
-			// aapt resource value: 0x7f070028
-			public const int currentObjectiveStepTextView = 2131165224;
+			// aapt resource value: 0x7f07002c
+			public const int currentObjectiveStepTextView = 2131165228;
 			
-			// aapt resource value: 0x7f070021
-			public const int currentObjectiveTextView = 2131165217;
+			// aapt resource value: 0x7f070025
+			public const int currentObjectiveTextView = 2131165221;
 			
 			// aapt resource value: 0x7f07000d
 			public const int dark = 2131165197;
 			
-			// aapt resource value: 0x7f070013
-			public const int gamePageRoot = 2131165203;
+			// aapt resource value: 0x7f070012
+			public const int gamePageRoot = 2131165202;
+			
+			// aapt resource value: 0x7f070010
+			public const int gameStepContainer = 2131165200;
+			
+			// aapt resource value: 0x7f070011
+			public const int gameStepNavigationFragment = 2131165201;
+			
+			// aapt resource value: 0x7f07001d
+			public const int gameStepNavigationRoot = 2131165213;
+			
+			// aapt resource value: 0x7f07000f
+			public const int gameViewRoot = 2131165199;
 			
 			// aapt resource value: 0x7f07001a
 			public const int howToPlayButton = 2131165210;
@@ -368,23 +383,26 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070017
 			public const int landingPageButtonGroupRoot = 2131165207;
 			
-			// aapt resource value: 0x7f070016
-			public const int landingPageRoot = 2131165206;
+			// aapt resource value: 0x7f070015
+			public const int landingPageRoot = 2131165205;
 			
 			// aapt resource value: 0x7f07000e
 			public const int light = 2131165198;
 			
-			// aapt resource value: 0x7f07000f
-			public const int linearLayout1 = 2131165199;
+			// aapt resource value: 0x7f070016
+			public const int linearLayout1 = 2131165206;
 			
-			// aapt resource value: 0x7f07001d
-			public const int mapFragment = 2131165213;
+			// aapt resource value: 0x7f070021
+			public const int mapFragment = 2131165217;
 			
-			// aapt resource value: 0x7f070024
-			public const int nextObjectiveButton = 2131165220;
+			// aapt resource value: 0x7f070028
+			public const int nextObjectiveButton = 2131165224;
 			
-			// aapt resource value: 0x7f07002b
-			public const int nextObjectiveStepButton = 2131165227;
+			// aapt resource value: 0x7f07002f
+			public const int nextObjectiveStepButton = 2131165231;
+			
+			// aapt resource value: 0x7f07001f
+			public const int nextStepButton = 2131165215;
 			
 			// aapt resource value: 0x7f070003
 			public const int none = 2131165187;
@@ -392,53 +410,50 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070004
 			public const int normal = 2131165188;
 			
-			// aapt resource value: 0x7f07002a
-			public const int numberOfObjectiveStepsTextView = 2131165226;
-			
-			// aapt resource value: 0x7f070023
-			public const int numberOfObjectivesTextView = 2131165219;
-			
-			// aapt resource value: 0x7f07001f
-			public const int objectiveDisplayRoot = 2131165215;
-			
-			// aapt resource value: 0x7f070010
-			public const int objectiveNavigationFragment = 2131165200;
-			
-			// aapt resource value: 0x7f070022
-			public const int objectiveSeparatorTextView = 2131165218;
-			
-			// aapt resource value: 0x7f070026
-			public const int objectiveStepDisplayRoot = 2131165222;
-			
-			// aapt resource value: 0x7f070011
-			public const int objectiveStepNavigationContainer = 2131165201;
-			
-			// aapt resource value: 0x7f070029
-			public const int objectiveStepSeparatorTextView = 2131165225;
+			// aapt resource value: 0x7f07002e
+			public const int numberOfObjectiveStepsTextView = 2131165230;
 			
 			// aapt resource value: 0x7f070027
-			public const int objectiveStepTextView = 2131165223;
+			public const int numberOfObjectivesTextView = 2131165223;
 			
-			// aapt resource value: 0x7f070012
-			public const int objectiveStepViewContainer = 2131165202;
+			// aapt resource value: 0x7f070023
+			public const int objectiveDisplayRoot = 2131165219;
 			
-			// aapt resource value: 0x7f070020
-			public const int objectiveTextView = 2131165216;
+			// aapt resource value: 0x7f070026
+			public const int objectiveSeparatorTextView = 2131165222;
+			
+			// aapt resource value: 0x7f07002a
+			public const int objectiveStepDisplayRoot = 2131165226;
+			
+			// aapt resource value: 0x7f07002d
+			public const int objectiveStepSeparatorTextView = 2131165229;
+			
+			// aapt resource value: 0x7f07002b
+			public const int objectiveStepTextView = 2131165227;
+			
+			// aapt resource value: 0x7f070024
+			public const int objectiveTextView = 2131165220;
+			
+			// aapt resource value: 0x7f070022
+			public const int previousObjectiveButton = 2131165218;
+			
+			// aapt resource value: 0x7f070029
+			public const int previousObjectiveStepButton = 2131165225;
 			
 			// aapt resource value: 0x7f07001e
-			public const int previousObjectiveButton = 2131165214;
+			public const int previousStepButton = 2131165214;
 			
-			// aapt resource value: 0x7f070025
-			public const int previousObjectiveStepButton = 2131165221;
+			// aapt resource value: 0x7f070030
+			public const int questionTextView = 2131165232;
 			
-			// aapt resource value: 0x7f07002c
-			public const int questionTextView = 2131165228;
-			
-			// aapt resource value: 0x7f070014
-			public const int restGameButton = 2131165204;
+			// aapt resource value: 0x7f070013
+			public const int restGameButton = 2131165203;
 			
 			// aapt resource value: 0x7f070005
 			public const int satellite = 2131165189;
+			
+			// aapt resource value: 0x7f070020
+			public const int scanCodeButton = 2131165216;
 			
 			// aapt resource value: 0x7f07000a
 			public const int standard = 2131165194;
@@ -449,8 +464,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070006
 			public const int terrain = 2131165190;
 			
-			// aapt resource value: 0x7f07002e
-			public const int textObjectiveStepContent = 2131165230;
+			// aapt resource value: 0x7f070032
+			public const int textObjectiveStepContent = 2131165234;
 			
 			// aapt resource value: 0x7f07000b
 			public const int wide = 2131165195;
@@ -491,34 +506,40 @@ namespace SZWMar2018.Droid
 			public const int activity_menu = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int fragment_gotolocationobjectivestep = 2130903042;
+			public const int fragment_gamestepnavigation = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int fragment_objectivenavigation = 2130903043;
+			public const int fragment_gotolocationobjectivestep = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int fragment_objectivestepnavigation = 2130903044;
+			public const int fragment_objectivenavigation = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int fragment_objectivestepview = 2130903045;
+			public const int fragment_objectivestepnavigation = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int fragment_questionobjectivestep = 2130903046;
+			public const int fragment_objectivestepview = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int fragment_textobjectivestep = 2130903047;
+			public const int fragment_questionobjectivestep = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int item_answer = 2130903048;
+			public const int fragment_taskgamestep = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int splash_screen = 2130903049;
+			public const int fragment_textgamestep = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int zxingscanneractivitylayout = 2130903050;
+			public const int item_answer = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int zxingscannerfragmentlayout = 2130903051;
+			public const int splash_screen = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int zxingscanneractivitylayout = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int zxingscannerfragmentlayout = 2130903053;
 			
 			static Layout()
 			{
@@ -606,11 +627,11 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f080002
 			public const int AnswerButton = 2131230722;
 			
+			// aapt resource value: 0x7f080001
+			public const int SZWMar2018AppStyle = 2131230721;
+			
 			// aapt resource value: 0x7f080000
 			public const int Theme_Splash = 2131230720;
-			
-			// aapt resource value: 0x7f080001
-			public const int UrbanGameAppStyle = 2131230721;
 			
 			static Style()
 			{

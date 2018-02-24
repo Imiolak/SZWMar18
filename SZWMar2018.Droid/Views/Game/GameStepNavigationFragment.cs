@@ -4,17 +4,16 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Platform;
 using SZWMar2018.Core.ViewModels.Game;
-using SZWMar2018.Droid;
 
-namespace UrbanGame.Droid.Resources.Views.Game
+namespace SZWMar2018.Droid.Views.Game
 {
-    public class ObjectiveNavigationFragment : MvxFragment<ObjectiveNavigationViewModel>
+    public class GameStepNavigationFragment : MvxFragment<GameStepNavigationViewModel>
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
-            ViewModel = Mvx.IocConstruct<ObjectiveNavigationViewModel>();
-            return this.BindingInflate(Resource.Layout.fragment_objectivenavigation, null);
+            ViewModel = Mvx.IocConstruct<GameStepNavigationViewModel>();
+            return this.BindingInflate(Resource.Layout.fragment_gamestepnavigation, null);
         }
     }
 }
