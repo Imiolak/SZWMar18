@@ -335,23 +335,29 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070014
 			public const int advanceObjectiveButton = 2131165204;
 			
-			// aapt resource value: 0x7f070031
-			public const int answersRadioGroup = 2131165233;
+			// aapt resource value: 0x7f070033
+			public const int answersRadioGroup = 2131165235;
 			
 			// aapt resource value: 0x7f07000c
 			public const int auto = 2131165196;
 			
-			// aapt resource value: 0x7f070033
-			public const int contentFrame = 2131165235;
+			// aapt resource value: 0x7f07001e
+			public const int backNavigation = 2131165214;
 			
-			// aapt resource value: 0x7f07002c
-			public const int currentObjectiveStepTextView = 2131165228;
+			// aapt resource value: 0x7f070035
+			public const int contentFrame = 2131165237;
 			
-			// aapt resource value: 0x7f070025
-			public const int currentObjectiveTextView = 2131165221;
+			// aapt resource value: 0x7f07002e
+			public const int currentObjectiveStepTextView = 2131165230;
+			
+			// aapt resource value: 0x7f070027
+			public const int currentObjectiveTextView = 2131165223;
 			
 			// aapt resource value: 0x7f07000d
 			public const int dark = 2131165197;
+			
+			// aapt resource value: 0x7f070020
+			public const int forwardNavigation = 2131165216;
 			
 			// aapt resource value: 0x7f070012
 			public const int gamePageRoot = 2131165202;
@@ -392,17 +398,17 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070016
 			public const int linearLayout1 = 2131165206;
 			
+			// aapt resource value: 0x7f070023
+			public const int mapFragment = 2131165219;
+			
+			// aapt resource value: 0x7f07002a
+			public const int nextObjectiveButton = 2131165226;
+			
+			// aapt resource value: 0x7f070031
+			public const int nextObjectiveStepButton = 2131165233;
+			
 			// aapt resource value: 0x7f070021
-			public const int mapFragment = 2131165217;
-			
-			// aapt resource value: 0x7f070028
-			public const int nextObjectiveButton = 2131165224;
-			
-			// aapt resource value: 0x7f07002f
-			public const int nextObjectiveStepButton = 2131165231;
-			
-			// aapt resource value: 0x7f07001f
-			public const int nextStepButton = 2131165215;
+			public const int nextStepButton = 2131165217;
 			
 			// aapt resource value: 0x7f070003
 			public const int none = 2131165187;
@@ -410,41 +416,41 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070004
 			public const int normal = 2131165188;
 			
-			// aapt resource value: 0x7f07002e
-			public const int numberOfObjectiveStepsTextView = 2131165230;
-			
-			// aapt resource value: 0x7f070027
-			public const int numberOfObjectivesTextView = 2131165223;
-			
-			// aapt resource value: 0x7f070023
-			public const int objectiveDisplayRoot = 2131165219;
-			
-			// aapt resource value: 0x7f070026
-			public const int objectiveSeparatorTextView = 2131165222;
-			
-			// aapt resource value: 0x7f07002a
-			public const int objectiveStepDisplayRoot = 2131165226;
-			
-			// aapt resource value: 0x7f07002d
-			public const int objectiveStepSeparatorTextView = 2131165229;
-			
-			// aapt resource value: 0x7f07002b
-			public const int objectiveStepTextView = 2131165227;
-			
-			// aapt resource value: 0x7f070024
-			public const int objectiveTextView = 2131165220;
-			
-			// aapt resource value: 0x7f070022
-			public const int previousObjectiveButton = 2131165218;
+			// aapt resource value: 0x7f070030
+			public const int numberOfObjectiveStepsTextView = 2131165232;
 			
 			// aapt resource value: 0x7f070029
-			public const int previousObjectiveStepButton = 2131165225;
+			public const int numberOfObjectivesTextView = 2131165225;
 			
-			// aapt resource value: 0x7f07001e
-			public const int previousStepButton = 2131165214;
+			// aapt resource value: 0x7f070025
+			public const int objectiveDisplayRoot = 2131165221;
 			
-			// aapt resource value: 0x7f070030
-			public const int questionTextView = 2131165232;
+			// aapt resource value: 0x7f070028
+			public const int objectiveSeparatorTextView = 2131165224;
+			
+			// aapt resource value: 0x7f07002c
+			public const int objectiveStepDisplayRoot = 2131165228;
+			
+			// aapt resource value: 0x7f07002f
+			public const int objectiveStepSeparatorTextView = 2131165231;
+			
+			// aapt resource value: 0x7f07002d
+			public const int objectiveStepTextView = 2131165229;
+			
+			// aapt resource value: 0x7f070026
+			public const int objectiveTextView = 2131165222;
+			
+			// aapt resource value: 0x7f070024
+			public const int previousObjectiveButton = 2131165220;
+			
+			// aapt resource value: 0x7f07002b
+			public const int previousObjectiveStepButton = 2131165227;
+			
+			// aapt resource value: 0x7f07001f
+			public const int previousStepButton = 2131165215;
+			
+			// aapt resource value: 0x7f070032
+			public const int questionTextView = 2131165234;
 			
 			// aapt resource value: 0x7f070013
 			public const int restGameButton = 2131165203;
@@ -452,8 +458,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070005
 			public const int satellite = 2131165189;
 			
-			// aapt resource value: 0x7f070020
-			public const int scanCodeButton = 2131165216;
+			// aapt resource value: 0x7f070022
+			public const int scanCodeButton = 2131165218;
 			
 			// aapt resource value: 0x7f07000a
 			public const int standard = 2131165194;
@@ -464,8 +470,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070006
 			public const int terrain = 2131165190;
 			
-			// aapt resource value: 0x7f070032
-			public const int textObjectiveStepContent = 2131165234;
+			// aapt resource value: 0x7f070034
+			public const int textObjectiveStepContent = 2131165236;
 			
 			// aapt resource value: 0x7f07000b
 			public const int wide = 2131165195;
