@@ -46,7 +46,11 @@ namespace SZWMar2018.Core.ViewModels.Game
                     .GetType()
                     .FullName;
                 
-                ShowViewModel(_viewModelTypesByGamePartStepType[gamePartStepType]);
+                ShowViewModel(_viewModelTypesByGamePartStepType[gamePartStepType], new
+                {
+                    gamePartNo = _gamePartNo,
+                    gameStepNo = _currentStep
+                });
             }
         }
 

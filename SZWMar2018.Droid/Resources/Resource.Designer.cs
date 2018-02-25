@@ -344,8 +344,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f07001e
 			public const int backNavigation = 2131165214;
 			
-			// aapt resource value: 0x7f070035
-			public const int contentFrame = 2131165237;
+			// aapt resource value: 0x7f070036
+			public const int contentFrame = 2131165238;
 			
 			// aapt resource value: 0x7f07002e
 			public const int currentObjectiveStepTextView = 2131165230;
@@ -469,6 +469,9 @@ namespace SZWMar2018.Droid
 			
 			// aapt resource value: 0x7f070006
 			public const int terrain = 2131165190;
+			
+			// aapt resource value: 0x7f070035
+			public const int textGameStepContent = 2131165237;
 			
 			// aapt resource value: 0x7f070034
 			public const int textObjectiveStepContent = 2131165236;
