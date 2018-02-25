@@ -2,14 +2,17 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using SZWMar2018.Core.Custom;
+using SZWMar2018.Core.Interactions;
 using SZWMar2018.Core.Models;
 using SZWMar2018.Core.Services;
+using SZWMar2018.Core.ViewModels.Menu;
 using ZXing;
 using ZXing.Mobile;
 
 namespace SZWMar2018.Core.ViewModels.Game
 {
-    public class GameStepNavigationViewModel : MvxViewModel
+    public class GameStepNavigationViewModel : MvxViewModelWithNoBackStackNavigation
     {
         private readonly IDictionary<string, Type> _viewModelTypesByGamePartStepType = new Dictionary<string, Type>
         {
@@ -19,7 +22,8 @@ namespace SZWMar2018.Core.ViewModels.Game
 
         private readonly IGameStateService _gameStateService;
         private readonly IGamePartService _gamePartService;
-        
+        private readonly int _totalGameParts;
+
         private int _totalSteps;
 
         public GameStepNavigationViewModel(IGameStateService gameStateService, 
@@ -28,6 +32,8 @@ namespace SZWMar2018.Core.ViewModels.Game
             _gameStateService = gameStateService;
             _gamePartService = gamePartService;
 
+
+            _totalGameParts = _gamePartService.GetTotalNumberOfGameParts();
             CurrentGamePart = gameStateService.GetCurrentActiveGamePart();
         }
 
@@ -58,14 +64,14 @@ namespace SZWMar2018.Core.ViewModels.Game
                     .GetGamePartStep(_currentStep)
                     .GetType()
                     .FullName;
-                
+
+                RefreshView();
+
                 ShowViewModel(_viewModelTypesByGamePartStepType[gamePartStepType], new
                 {
                     gamePartNo = _currentGamePart,
                     gameStepNo = _currentStep
                 });
-
-                RefreshView();
             }
         }
 
@@ -80,6 +86,9 @@ namespace SZWMar2018.Core.ViewModels.Game
         public IMvxCommand NextStepCommand => new MvxCommand(NextStep);
 
         public IMvxCommand ScanCodeCommand => new MvxCommand(ScanCode);
+
+        private readonly MvxInteraction<DialogInteraction> _dialogInteraction = new MvxInteraction<DialogInteraction>();
+        public IMvxInteraction<DialogInteraction> DialogInteraction => _dialogInteraction;
 
         private void PreviousStep()
         {
@@ -111,13 +120,40 @@ namespace SZWMar2018.Core.ViewModels.Game
             var scanResult = await scanner.Scan(scannerOptions);
             if (scanResult != null)
             {
-                var newActiveGamePart = _currentGamePart + 1;
+                await AdvanceToNextGamePart(scanResult.Text);
+            }
+        }
 
+        private async Task AdvanceToNextGamePart(string scanResult)
+        {
+            var newActiveGamePart = _currentGamePart + 1;
+
+            if (newActiveGamePart > _totalGameParts
+                && VerifyScannedCode(scanResult, "END"))
+            {
+                _gameStateService.EndGame();
+                ShowViewModelAndClearBackStack<GameSummaryViewModel>();
+            }
+            else if (VerifyScannedCode(scanResult, $"LACZNIK_{_currentGamePart}"))
+            {
                 _gameStateService.SetActiveGamePart(newActiveGamePart);
                 await Task.Delay(TimeSpan.FromMilliseconds(150));
 
                 CurrentGamePart = newActiveGamePart;
             }
+            else
+            {
+                _dialogInteraction.Raise(new DialogInteraction
+                {
+                    Title = "Niepoprawny kod",
+                    Text = "Kod, który próbujesz zeskanować jest niepoprawny, lub nie nadaje się do zeskanowania w tym momencie gry. Skontaktuj się z organizatorem."
+                });
+            }
+        }
+
+        private static bool VerifyScannedCode(string scannedCode, string expectedPrefix)
+        {
+            return scannedCode.StartsWith(expectedPrefix);
         }
 
         private void RefreshView()

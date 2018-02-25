@@ -18,7 +18,14 @@ namespace SZWMar2018.Core.Custom
         {
             if (_gameStateService.GetGameStarted())
             {
-                ShowViewModel<GameViewModel>();
+                if (!_gameStateService.GetGameEnded())
+                {
+                    ShowViewModel<GameViewModel>();
+                }
+                else
+                {
+                    ShowViewModel<GameSummaryViewModel>();
+                }
             }
             else
             {

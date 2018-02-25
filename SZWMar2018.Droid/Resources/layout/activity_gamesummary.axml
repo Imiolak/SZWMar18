@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gamesummary_background"
+    android:id="@+id/gameSummaryRoot">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/gameSummaryMessageRoot"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/gameSummaryMessageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Dziękujemy za ukończenie gry, nanananaf fgaskdjhfas dfaskjlhas dfkjhsd fksjhha sdfl..."
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gameTimeRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:text="Tutaj wyświetli się czas gry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameTimeContent"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+    </RelativeLayout>
+</LinearLayout>

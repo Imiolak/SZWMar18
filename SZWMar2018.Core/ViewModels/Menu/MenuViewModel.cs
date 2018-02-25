@@ -1,5 +1,5 @@
+﻿using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
-using MvvmCross.Core.ViewModels;
 using SZWMar2018.Core.Custom;
 using SZWMar2018.Core.Interactions;
 using SZWMar2018.Core.Services;
@@ -41,11 +41,25 @@ namespace SZWMar2018.Core.ViewModels.Menu
             };
 
             var scanResult = await scanner.Scan(scannerOptions);
-            if (scanResult != null)
+            if (scanResult != null
+                && VerifyStartingCode(scanResult.Text))
             {
                 _gameStateService.StartGame();
                 ShowViewModelAndClearBackStack<GameViewModel>();
             }
+            else
+            {
+                _dialogInteraction.Raise(new DialogInteraction
+                {
+                    Title = "Niepoprawny kod",
+                    Text = "Kod, który próbujesz zeskanować jest niepoprawny, lub nie nadaje się do zeskanowania w tym momencie gry. Skontaktuj się z organizatorem."
+                });
+            }
+        }
+
+        private static bool VerifyStartingCode(string scannedCode)
+        {
+            return scannedCode.StartsWith("START");
         }
 
         private void ActionNotImplemented()

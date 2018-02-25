@@ -13,5 +13,9 @@
         int GetCurrentActiveGamePart();
 
         void SetActiveGamePart(int newActiveGamePart);
+
+        bool GetGameEnded();
+
+        void EndGame();
     }
 }

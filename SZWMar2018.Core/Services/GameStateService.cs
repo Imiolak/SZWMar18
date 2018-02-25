@@ -3,6 +3,7 @@
     public class GameStateService : IGameStateService
     {
         private const string GameStartedKey = "GameStarted";
+        private const string GameEndedKey = "GameEnded";
         private const string CurrentActiveGamePartKey = "CurrentActiveGamePart";
 
         private readonly IApplicationVariableService _applicationVariableService;
@@ -27,6 +28,7 @@
         public void ResetGame()
         {
             _applicationVariableService.SetValue(GameStartedKey, false.ToString());
+            _applicationVariableService.SetValue(GameEndedKey, false.ToString());
         }
 
         public int GetNumberOfObjectives()
@@ -42,6 +44,20 @@
         public void SetActiveGamePart(int newActiveGamePart)
         {
             _applicationVariableService.SetValue(CurrentActiveGamePartKey, newActiveGamePart.ToString());
+        }
+
+        public bool GetGameEnded()
+        {
+            var gameEndedVariable = _applicationVariableService.GetValueByKey(GameEndedKey);
+
+            return gameEndedVariable != null
+                ? bool.Parse(gameEndedVariable)
+                : false;
+        }
+
+        public void EndGame()
+        {
+            _applicationVariableService.SetValue(GameEndedKey, true.ToString());
         }
     }
 }

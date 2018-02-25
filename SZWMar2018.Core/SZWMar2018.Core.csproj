@@ -63,6 +63,7 @@
     <Compile Include="ViewModels\Game\TaskGameStepViewModel.cs" />
     <Compile Include="ViewModels\Game\TextGameStepViewModel.cs" />
     <Compile Include="ViewModels\Game\GoToLocationObjectiveStepViewModel.cs" />
+    <Compile Include="ViewModels\Menu\GameSummaryViewModel.cs" />
     <Compile Include="ViewModels\Menu\MenuViewModel.cs" />
     <Compile Include="ViewModels\Game\ObjectiveStepNavigationViewModel.cs" />
   </ItemGroup>
