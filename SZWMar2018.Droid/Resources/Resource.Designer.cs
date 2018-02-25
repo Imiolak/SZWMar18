@@ -344,8 +344,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f07001e
 			public const int backNavigation = 2131165214;
 			
-			// aapt resource value: 0x7f070036
-			public const int contentFrame = 2131165238;
+			// aapt resource value: 0x7f07003e
+			public const int contentFrame = 2131165246;
 			
 			// aapt resource value: 0x7f07002e
 			public const int currentObjectiveStepTextView = 2131165230;
@@ -467,14 +467,38 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070019
 			public const int startGameButton = 2131165209;
 			
+			// aapt resource value: 0x7f070034
+			public const int taskGameStepRoot = 2131165236;
+			
+			// aapt resource value: 0x7f070036
+			public const int taskLocationMarkers = 2131165238;
+			
+			// aapt resource value: 0x7f070039
+			public const int taskPasswordContent = 2131165241;
+			
+			// aapt resource value: 0x7f070038
+			public const int taskPasswordLabel = 2131165240;
+			
+			// aapt resource value: 0x7f070037
+			public const int taskPasswordReplyRoot = 2131165239;
+			
+			// aapt resource value: 0x7f07003b
+			public const int taskReplyContent = 2131165243;
+			
+			// aapt resource value: 0x7f07003a
+			public const int taskReplyLabel = 2131165242;
+			
+			// aapt resource value: 0x7f070035
+			public const int taskSummary = 2131165237;
+			
 			// aapt resource value: 0x7f070006
 			public const int terrain = 2131165190;
 			
-			// aapt resource value: 0x7f070035
-			public const int textGameStepContent = 2131165237;
+			// aapt resource value: 0x7f07003d
+			public const int textGameStepContent = 2131165245;
 			
-			// aapt resource value: 0x7f070034
-			public const int textObjectiveStepContent = 2131165236;
+			// aapt resource value: 0x7f07003c
+			public const int textGameStepRoot = 2131165244;
 			
 			// aapt resource value: 0x7f07000b
 			public const int wide = 2131165195;

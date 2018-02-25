@@ -20,5 +20,13 @@ namespace SZWMar2018.Core.ViewModels.Game
             _gameStep = _gamePartService.GetGamePart(gamePartNo)
                 .GetGamePartStep(gameStepNo) as TaskGameStep;
         }
+
+        public string TaskSummary => _gameStep.TaskText;
+
+        public string Password => _gameStep.Password;
+
+        public string Reply => _gameStep.Reply;
+
+        public bool PasswordReplyVisible => !string.IsNullOrWhiteSpace(_gameStep.Password);
     }
 }
