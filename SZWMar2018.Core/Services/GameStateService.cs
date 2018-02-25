@@ -2,6 +2,9 @@
 {
     public class GameStateService : IGameStateService
     {
+        private const string GameStartedKey = "GameStarted";
+        private const string CurrentActiveGamePartKey = "CurrentActiveGamePart";
+
         private readonly IApplicationVariableService _applicationVariableService;
 
         public GameStateService(IApplicationVariableService applicationVariableService)
@@ -11,19 +14,19 @@
 
         public bool GetGameStarted()
         {
-            var gameStarted = _applicationVariableService.GetValueByKey("GameStarted");
+            var gameStarted = _applicationVariableService.GetValueByKey(GameStartedKey);
             return gameStarted != null && bool.Parse(gameStarted);
         }
 
         public void StartGame()
         {
-            _applicationVariableService.SetValue("GameStarted", true.ToString());
-            _applicationVariableService.SetValue("CurrentActiveGamePart", 1.ToString());
+            _applicationVariableService.SetValue(GameStartedKey, true.ToString());
+            _applicationVariableService.SetValue(CurrentActiveGamePartKey, 1.ToString());
         }
 
         public void ResetGame()
         {
-            _applicationVariableService.SetValue("GameStarted", false.ToString());
+            _applicationVariableService.SetValue(GameStartedKey, false.ToString());
         }
 
         public int GetNumberOfObjectives()
@@ -33,12 +36,12 @@
 
         public int GetCurrentActiveGamePart()
         {
-            return int.Parse(_applicationVariableService.GetValueByKey("CurrentActiveGamePart"));
+            return int.Parse(_applicationVariableService.GetValueByKey(CurrentActiveGamePartKey));
         }
 
-        public void AdvanceToNextGamePart()
+        public void SetActiveGamePart(int newActiveGamePart)
         {
-            throw new System.NotImplementedException();
+            _applicationVariableService.SetValue(CurrentActiveGamePartKey, newActiveGamePart.ToString());
         }
     }
 }

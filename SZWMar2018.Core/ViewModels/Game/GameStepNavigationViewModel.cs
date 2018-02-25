@@ -1,8 +1,11 @@
 ﻿using MvvmCross.Core.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using SZWMar2018.Core.Models;
 using SZWMar2018.Core.Services;
+using ZXing;
+using ZXing.Mobile;
 
 namespace SZWMar2018.Core.ViewModels.Game
 {
@@ -16,10 +19,8 @@ namespace SZWMar2018.Core.ViewModels.Game
 
         private readonly IGameStateService _gameStateService;
         private readonly IGamePartService _gamePartService;
-
-        private int _gamePartNo;
+        
         private int _totalSteps;
-        private GamePart _gamePart;
 
         public GameStepNavigationViewModel(IGameStateService gameStateService, 
             IGamePartService gamePartService)
@@ -27,12 +28,23 @@ namespace SZWMar2018.Core.ViewModels.Game
             _gameStateService = gameStateService;
             _gamePartService = gamePartService;
 
-            _gamePartNo = gameStateService.GetCurrentActiveGamePart();
-            _gamePart = _gamePartService.GetGamePart(_gamePartNo);
-            _totalSteps = _gamePart.Steps
-                .Count;
+            CurrentGamePart = gameStateService.GetCurrentActiveGamePart();
+        }
 
-            CurrentGamePartStep = 1;
+        private int _currentGamePart;
+        public int CurrentGamePart
+        {
+            get => _currentGamePart;
+            set
+            {
+                _currentGamePart = value;
+
+                _totalSteps = _gamePartService.GetGamePart(_currentGamePart)
+                    .Steps
+                    .Count;
+
+                CurrentGamePartStep = 1;
+            }
         }
 
         private int _currentStep;
@@ -42,15 +54,18 @@ namespace SZWMar2018.Core.ViewModels.Game
             set
             {
                 _currentStep = value;
-                var gamePartStepType = _gamePart.GetGamePartStep(_currentStep)
+                var gamePartStepType = _gamePartService.GetGamePart(_currentGamePart)
+                    .GetGamePartStep(_currentStep)
                     .GetType()
                     .FullName;
                 
                 ShowViewModel(_viewModelTypesByGamePartStepType[gamePartStepType], new
                 {
-                    gamePartNo = _gamePartNo,
+                    gamePartNo = _currentGamePart,
                     gameStepNo = _currentStep
                 });
+
+                RefreshView();
             }
         }
 
@@ -69,23 +84,47 @@ namespace SZWMar2018.Core.ViewModels.Game
         private void PreviousStep()
         {
             CurrentGamePartStep--;
-
-            RaisePropertyChanged(nameof(PreviousStepButtonVisible));
-            RaisePropertyChanged(nameof(NextStepButtonVisible));
-            RaisePropertyChanged(nameof(ScanCodeButtonVisible));
+            RefreshView();
         }
 
         private void NextStep()
         {
             CurrentGamePartStep++;
+            RefreshView();
+        }
 
+        private async void ScanCode()
+        {
+            var scannerOptions = new MobileBarcodeScanningOptions
+            {
+                PossibleFormats = new List<BarcodeFormat>
+                {
+                    BarcodeFormat.QR_CODE
+                }
+            };
+            var scanner = new MobileBarcodeScanner
+            {
+                TopText = "Zeskanuj kod",
+                CancelButtonText = "Anuluj"
+            };
+
+            var scanResult = await scanner.Scan(scannerOptions);
+            if (scanResult != null)
+            {
+                var newActiveGamePart = _currentGamePart + 1;
+
+                _gameStateService.SetActiveGamePart(newActiveGamePart);
+                await Task.Delay(TimeSpan.FromMilliseconds(150));
+
+                CurrentGamePart = newActiveGamePart;
+            }
+        }
+
+        private void RefreshView()
+        {
             RaisePropertyChanged(nameof(PreviousStepButtonVisible));
             RaisePropertyChanged(nameof(NextStepButtonVisible));
             RaisePropertyChanged(nameof(ScanCodeButtonVisible));
-        }
-
-        private void ScanCode()
-        {
         }
     }
 }

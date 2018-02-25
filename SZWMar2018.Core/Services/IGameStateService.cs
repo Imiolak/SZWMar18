@@ -12,6 +12,6 @@
 
         int GetCurrentActiveGamePart();
 
-        void AdvanceToNextGamePart();
+        void SetActiveGamePart(int newActiveGamePart);
     }
 }

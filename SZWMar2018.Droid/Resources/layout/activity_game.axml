@@ -27,11 +27,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/restGameButton" />
-        <Button
-            local:MvxBind="Click AdvanceObjectiveCommand"
-            android:text="Advance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/advanceObjectiveButton" />
     </LinearLayout>
 </LinearLayout>
