@@ -204,7 +204,9 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\splash_screen.axml" />
     <AndroidResource Include="Resources\layout\activity_menu.axml" />
-    <AndroidResource Include="Resources\layout\activity_game.axml" />
+    <AndroidResource Include="Resources\layout\activity_game.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_objectivestepnavigation.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

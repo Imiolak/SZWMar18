@@ -31,11 +31,11 @@ namespace SZWMar2018.Core.ViewModels.Game
             _gamePart = _gamePartService.GetGamePart(_gamePartNo);
             _totalSteps = _gamePart.Steps
                 .Count;
-            
 
+            CurrentGamePartStep = 1;
         }
 
-        private int _currentStep = 1;
+        private int _currentStep;
         public int CurrentGamePartStep
         {
             get => _currentStep;
