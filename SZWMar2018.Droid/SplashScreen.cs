@@ -1,10 +1,10 @@
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using MvvmCross.Droid.Views;
 
 namespace SZWMar2018.Droid
 {
-    [Activity(Label = "SZWMar2018", 
+    [Activity(Label = "Śladami Żołnierzy Wyklętych - Bochnia 2018", 
         MainLauncher = true, 
         Icon = "@drawable/icon", 
         Theme = "@style/Theme.Splash", 

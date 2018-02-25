@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Core.ViewModels;
@@ -10,7 +11,7 @@ using ZXing.Mobile;
 
 namespace SZWMar2018.Droid.Views.Game
 {
-    [Activity]
+    [Activity(ScreenOrientation = ScreenOrientation.Portrait)]
     public class GameActivity : MvxCachingFragmentActivity<GameViewModel>
     {
         protected override void OnCreate(Bundle bundle)
