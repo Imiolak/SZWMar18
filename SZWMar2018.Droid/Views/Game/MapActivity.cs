@@ -24,7 +24,7 @@ namespace SZWMar2018.Droid.Views.Game
         {
             var cameraPosition = CameraPosition.InvokeBuilder()
                 .Target(new LatLng(49.9714601, 20.4225756))
-                .Zoom(12f)
+                .Zoom(14f)
                 .Build();
             var cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
 

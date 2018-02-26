@@ -42,8 +42,8 @@ namespace SZWMar2018.Core.Services
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.969337,
-                                    Longitude = 20.4281672,
+                                    Latitude = 49.9692934,
+                                    Longitude = 20.4282733,
                                     Tooltip = "Rynek"
                                 }
                             },
@@ -106,14 +106,14 @@ namespace SZWMar2018.Core.Services
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.9730563,
-                                    Longitude = 20.423978,
+                                    Latitude = 49.973407,
+                                    Longitude = 20.425047,
                                     Tooltip = "Cmentarz"
                                 },
                                 new LocationMarker
                                 {
-                                    Latitude = 49.976318,
-                                    Longitude = 20.4324119,
+                                    Latitude = 49.977112,
+                                    Longitude = 20.431333,
                                     Tooltip = "Dworzec Kolejowy"
                                 }
                             },
@@ -143,8 +143,8 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.9764134,
-                                    Longitude = 20.4316575,
+                                    Latitude = 49.976425,
+                                    Longitude = 20.433853,
                                     Tooltip = @"Basen"
                                 }
                             },
@@ -196,8 +196,8 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.9725985,
-                                    Longitude = 20.427449,
+                                    Latitude = 49.972747,
+                                    Longitude = 20.427785,
                                     Tooltip = @"Drukarnia"
                                 }
                             },
@@ -220,9 +220,9 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.9730563,
-                                    Longitude = 20.423978,
-                                    Tooltip = @"Cmentarz"
+                                    Latitude = 49.973407,
+                                    Longitude = 20.425047,
+                                    Tooltip = "Cmentarz"
                                 },
                                 new LocationMarker
                                 {
