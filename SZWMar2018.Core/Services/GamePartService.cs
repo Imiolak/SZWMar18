@@ -37,7 +37,8 @@ namespace SZWMar2018.Core.Services
                         new TaskGameStep
                         {
                             PlaceInGamePart = 2,
-                            TaskText = @"Odnajdź na Rynku plakat szkalujący Armię Krajową i napisz na plakacie ""PPR = Płatne pachołki Rosji"". Następnie skontaktuj sie z Łącznikiem 1 który znajduje się w okolicach Rynku. Pokaż Łącznikowi fotografię potwierdzającą wykonanie zadania.",
+                            TaskText = @"Zadanie 1
+Odnaleźć na Rynku plakat szkalujący Armię Krajową i napisać na plakacie ""PPR = Płatne pachołki Rosji"". Następnie skontaktować sie z Łącznikiem 1 który znajduje się w okolicach Rynku. Łącznikowi okazać fotografię potwierdzającą wykonanie zadania.",
                             Locations = new List<LocationMarker>
                             {
                                 new LocationMarker
@@ -66,7 +67,11 @@ namespace SZWMar2018.Core.Services
                         new TaskGameStep
                         {
                             PlaceInGamePart = 2,
-                            TaskText = @"Odszukaj pomnik gen. Okulickiego (plac Okulickiego) i uzupełnij fragment rozkazu otrzymanego od Łącznika 1. Uzupełniony rozkaz dostarcz do Łącznika 2, który znajduje sie na Plantach w okolicach SP 2. W razie wątpliwości dotyczących treści rozkazu należy ustnie wyjaśnić motywy podjetej przez gen. ""Niedźwiadka"" decyzji.",
+                            TaskText = @"Zadanie 2
+Odebrać od Łącznika 1 pewną sumę pieniędzy przeznaczoną na prowadzenie dzialalności konspiracyjnej. Pieniądze dostarczyć do Łącznika 4 (jego lokalizacja poznasz później).
+
+Zadanie 3
+Odszukać pomnik gen. Okulickiego (plac Okulickiego) i uzupełnić fragment rozkazu otrzymanego od Łącznika 1. Uzupełniony rozkaz dostarczyć do Łącznika 2, który znajduje sie na Plantach w okolicach SP 2. W razie wątpliwości dotyczących treści rozkazu należy ustnie wyjaśnić motywy podjetej przez gen. ""Niedźwiadka"" decyzji.",
                             Locations = new List<LocationMarker>
                             {
                                 new LocationMarker
@@ -96,20 +101,15 @@ namespace SZWMar2018.Core.Services
                         new TextGameStep
                         {
                             PlaceInGamePart = 1,
-                            Text = @"20 stycznia 1945 r. Niemcy wycofali się z Bochni, a kolejnego dnia do miasta wkroczyły pierwsze oddziały sowieckie. Początkowo mieszkańcom Bochni mogło sie wydawać, że oznacza to wyzwolenie."
+                            Text = @"20 stycznia 1945 r. Niemcy wycofali się z Bochni, a kolejnego dnia do miasta wkroczyły pierwsze oddziały sowieckie. W walkach o Bochnię zginęło kilkustet żołnierzy radzieckich, którzy zostali pochowani w Bochni na cmentarzu prz ulicy Orackiej. Początkowo mieszkańcom Bochni mogło sie wydawać, że wejście Armii Czerwonej oznacza wyzwolenie. Szybko przekonali się jednak, że nowa rzeczywistość niewiele będzie się różniła od poprzedniej okupacji."
                         },
                         new TaskGameStep
                         {
                             PlaceInGamePart = 2,
-                            TaskText = @"Odszukaj na cmentarzu przy ul. Orackiej zbiorową mogiłę żołnierzy radzieckich i przepisz napis umieszczony na pomniku. Następnie nawiąż kontakt z Łącznikiem 3, który znajduje się w okolicach dworca kolejowego.",
+                            TaskText = @"Zadanie 4
+Nawiązać kontakt z Łącznikiem 3, który znajduje się na dworcu kolejowym.",
                             Locations = new List<LocationMarker>
                             {
-                                new LocationMarker
-                                {
-                                    Latitude = 49.973407,
-                                    Longitude = 20.425047,
-                                    Tooltip = "Cmentarz"
-                                },
                                 new LocationMarker
                                 {
                                     Latitude = 49.977112,
@@ -138,7 +138,11 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                         new TaskGameStep
                         {
                             PlaceInGamePart = 2,
-                            TaskText = @"Udaj się do Krytej Pływalni w Bochni i odnajdź na tablicy poświęconej Janowi Kotowi informację dotyczącą miejsc, w których więziony był Kot. Na podstawie informacji od Łącznika 3 napisz raport (i podpisz kryptonimem drużyny) na temat wydarzeń, które rozegrały się 31 sieprnia 1945 r. na trasie kolejowej między Bochnią a Kłajem. Skontaktować się z Łącznikiem 4, który znajduje się w okolicach Krytej Pływalni. Przekaż mu sporządzony raport oraz pieniądze na działalność konspiracyjną.",
+                            TaskText = @"Zadanie 5
+Na podstawie informacji przekazanych przez Łącznika 3 napisać raport o zachowaniach radzieckich żołnierzy w Bochni.
+
+Zadanie 6
+Udać się do Krytej Pływalni w Bochni i odnaleźć na tablicy poświęconej Janowi Kotowi informację dotyczącą miejsc, w których więziony był Kot. Skontaktować się z Łącznikiem 4, który znajduje się w budynku Krytej Pływalni i przekazać mu sporządzony raport (z zadania 5) oraz pieniądze (z zadania 2) na działalność konspiracyjną.",
                             Locations = new List<LocationMarker>
                             {
                                 new LocationMarker
@@ -162,13 +166,14 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                         new TaskGameStep
                         {
                             PlaceInGamePart = 1,
-                            TaskText = @"Od Łącznika 4 odbierz ""Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ"". Po dalsze instrukcje zgłoś się do Łącznika 5, który znajduje się przy skrzyżowaniu ulic: Solna Góra i Niecała.",
+                            TaskText = @"Zadanie 7
+Od Łącznika 4 odebrać ""Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ"". Po dalsze instrukcje zgłosić się do Łącznika 5, który znajduje się przy skrzyżowaniu ulic: Solna Góra i Niecała.",
                             Locations = new List<LocationMarker>
                             {
                                 new LocationMarker
                                 {
-                                    Latitude = 49.972147,
-                                    Longitude = 20.430147,
+                                    Latitude = 49.972372, 
+                                    Longitude = 20.430714,
                                     Tooltip = @"Solna Góra x Niecała"
                                 }
                             },
@@ -191,7 +196,8 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                         new TaskGameStep
                         {
                             PlaceInGamePart = 2,
-                            TaskText = @"Udaj się do budynku drukarni przy ul. Konstytucji 3 Maja. W budynku weź udział w wizytacji i odprawie, którą przeprowadzi Łącznik 6. Łacznikowi 6 przekazać ""Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ"".",
+                            TaskText = @"Zadanie 8
+Udać się do budynku drukarni przy ul. Konstytucji 3 Maja. W budynku wziąć udział w wizytacji i odprawie, którą przeprowadzi Łącznik 6. Łacznikowi 6 przekazać ""Memoriał polskiego ruchu oporu do Rady Bezpieczeństwa ONZ"".",
                             Locations = new List<LocationMarker>
                             {
                                 new LocationMarker
@@ -215,15 +221,9 @@ Jednym z członków kierownictwa WIN-u był były mieszkaniec Bochni, nauczyciel
                         new TaskGameStep
                         {
                             PlaceInGamePart = 1,
-                            TaskText = @"Zapal znicze na grobach Jana Kota i Feliksa Kornasia na cmentarzu przy ul. Orackiej. Zapalenie zniczy udokumentuj fotografią. Następnie wróć do budynku ZS nr 1 w Bochni.",
+                            TaskText = @"Powrócić do miejsca startu w budynku ZS nr 1 w Bochni.",
                             Locations = new List<LocationMarker>
                             {
-                                new LocationMarker
-                                {
-                                    Latitude = 49.973407,
-                                    Longitude = 20.425047,
-                                    Tooltip = "Cmentarz"
-                                },
                                 new LocationMarker
                                 {
                                     Latitude = 49.9666957,

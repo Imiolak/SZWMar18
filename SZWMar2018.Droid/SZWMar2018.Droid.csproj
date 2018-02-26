@@ -191,7 +191,6 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\Game\GameActivity.cs" />
-    <Compile Include="Views\Game\MapActivity.cs" />
     <Compile Include="Views\Game\ObjectiveNavigationFragment.cs" />
     <Compile Include="Views\Game\ObjectiveStepViewFragment.cs" />
     <Compile Include="Views\Game\QuestionObjectiveStepFragment.cs" />
@@ -230,7 +229,6 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_taskgamestep.axml" />
     <AndroidResource Include="Resources\layout\activity_gamesummary.axml" />
-    <AndroidResource Include="Resources\layout\activity_map.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

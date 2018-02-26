@@ -56,7 +56,6 @@
     <Compile Include="ViewModels\Game\AnswerViewModel.cs" />
     <Compile Include="ViewModels\Game\GameStepNavigationViewModel.cs" />
     <Compile Include="ViewModels\Game\GameViewModel.cs" />
-    <Compile Include="ViewModels\Game\MapViewModel.cs" />
     <Compile Include="ViewModels\Game\ObjectiveNavigationViewModel.cs" />
     <Compile Include="ViewModels\Game\ObjectiveStepViewModel.cs" />
     <Compile Include="Models\QuestionObjectiveStep.cs" />
