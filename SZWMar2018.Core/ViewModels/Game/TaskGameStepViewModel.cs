@@ -1,5 +1,5 @@
 ﻿using MvvmCross.Core.ViewModels;
-using System.Text;
+using System.Collections.Generic;
 using SZWMar2018.Core.Models;
 using SZWMar2018.Core.Services;
 
@@ -9,6 +9,7 @@ namespace SZWMar2018.Core.ViewModels.Game
     {
         private readonly IGamePartService _gamePartService;
 
+        private int _gamePartNo;
         private TaskGameStep _gameStep;
 
         public TaskGameStepViewModel(IGamePartService gamePartService)
@@ -18,6 +19,7 @@ namespace SZWMar2018.Core.ViewModels.Game
 
         public void Init(int gamePartNo, int gameStepNo)
         {
+            _gamePartNo = gamePartNo;
             _gameStep = _gamePartService.GetGamePart(gamePartNo)
                 .GetGamePartStep(gameStepNo) as TaskGameStep;
         }
@@ -30,22 +32,17 @@ namespace SZWMar2018.Core.ViewModels.Game
 
         public bool PasswordReplyVisible => !string.IsNullOrWhiteSpace(_gameStep.Password);
 
-        public string MarkersPlaceholder => BuildMarkersPlaceholder();
+        public IMvxCommand OpenMapCommand => new MvxCommand(ShowMap);
 
-        private string BuildMarkersPlaceholder()
+        public IList<LocationMarker> LocationMarkers => _gameStep.Locations;
+
+        private void ShowMap()
         {
-            var builder = new StringBuilder("Tu będzie mapa z zaznaczonymi następującymi punktami:");
-            builder.AppendLine();
-
-            foreach (var location in _gameStep.Locations)
+            ShowViewModel<MapViewModel>(new
             {
-                builder.AppendLine(location.Tooltip);
-                builder.AppendLine($"Szerokość geo: {location.Latitude}");
-                builder.AppendLine($"Długość geo: {location.Longitude}");
-                builder.AppendLine();
-            }
-
-            return builder.ToString();
+                gamePartNo = _gamePartNo,
+                gameStepNo = _gameStep.PlaceInGamePart
+            });
         }
     }
 }
