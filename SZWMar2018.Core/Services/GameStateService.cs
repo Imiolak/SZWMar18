@@ -1,10 +1,14 @@
-﻿namespace SZWMar2018.Core.Services
+﻿using System;
+
+namespace SZWMar2018.Core.Services
 {
     public class GameStateService : IGameStateService
     {
         private const string GameStartedKey = "GameStarted";
         private const string GameEndedKey = "GameEnded";
         private const string CurrentActiveGamePartKey = "CurrentActiveGamePart";
+        private const string GameStartedTimestampKey = "GameStartedTimestampUtc";
+        private const string GameElapsedTimeKey = "GameElapsedTimeMinutes";
 
         private readonly IApplicationVariableService _applicationVariableService;
 
@@ -23,6 +27,7 @@
         {
             _applicationVariableService.SetValue(GameStartedKey, true.ToString());
             _applicationVariableService.SetValue(CurrentActiveGamePartKey, 1.ToString());
+            _applicationVariableService.SetValue(GameStartedTimestampKey, DateTime.UtcNow.ToString());
         }
 
         public void ResetGame()
@@ -55,9 +60,19 @@
                 : false;
         }
 
+        public int GetGameElapsedTime()
+        {
+            return int.Parse(_applicationVariableService.GetValueByKey(GameElapsedTimeKey));
+        }
+
         public void EndGame()
         {
             _applicationVariableService.SetValue(GameEndedKey, true.ToString());
+
+            var gameStartedTimestamp = DateTime.Parse(_applicationVariableService.GetValueByKey(GameStartedTimestampKey));
+            var gameTime = DateTime.UtcNow - gameStartedTimestamp;
+            
+            _applicationVariableService.SetValue(GameElapsedTimeKey, ((int)gameTime.TotalMinutes).ToString());
         }
     }
 }

@@ -12,26 +12,19 @@ namespace SZWMar2018.Droid.Views.Game
     [MvxFragment(typeof(GameViewModel), Resource.Id.gameStepContainer)]
     public class TaskGameStepFragment : MvxFragment<TaskGameStepViewModel>, IOnMapReadyCallback
     {
-        private MapFragment _mapFragment;
-
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             base.OnCreateView(inflater, container, savedInstanceState);
             var view = this.BindingInflate(Resource.Layout.fragment_taskgamestep, null);
 
-            _mapFragment = Activity.FragmentManager.FindFragmentById<MapFragment>(Resource.Id.taskMap);
-            _mapFragment.GetMapAsync(this);
+            var transaction = Activity.FragmentManager.BeginTransaction();
+            var mapFragment = new MapFragment();
+            transaction.Replace(Resource.Id.mapFragmentPlaceholder, new MapFragment());
+            transaction.Commit();
+
+            mapFragment.GetMapAsync(this);
 
             return view;
-        }
-
-        public override void OnDestroyView()
-        {
-            base.OnDestroyView();
-
-            var transaction = Activity.FragmentManager.BeginTransaction();
-            transaction.Remove(_mapFragment);
-            transaction.Commit();
         }
 
         public void OnMapReady(GoogleMap googleMap)

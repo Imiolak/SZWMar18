@@ -17,5 +17,7 @@
         bool GetGameEnded();
 
         void EndGame();
+
+        int GetGameElapsedTime();
     }
 }

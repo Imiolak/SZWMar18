@@ -11,12 +11,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/taskSummary"
         local:MvxBind="Text TaskSummary" />
-    <fragment
+    <!--<fragment
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/taskMap"
         android:layout_weight="1"
-        class="com.google.android.gms.maps.MapFragment" />
+        class="com.google.android.gms.maps.MapFragment" />-->
 <!--<TextView
         android:text="Markers"
         android:layout_width="match_parent"
@@ -24,20 +24,11 @@
         android:id="@+id/taskLocationMarkers"
         android:layout_weight="1"
         local:MvxBind="Text MarkersPlaceholder" />-->
-    <!--<FrameLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/openMapButtonRoot"
-        android:layout_weight="1"
-        android:padding="15px">
-        <Button
-            android:text="Otwórz mapę"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/openMapButton"
-            android:layout_gravity="center" 
-            local:MvxBind="Click OpenMapCommand"/>
-    </FrameLayout>-->
+        android:id="@+id/mapFragmentPlaceholder"
+        android:layout_weight="1"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

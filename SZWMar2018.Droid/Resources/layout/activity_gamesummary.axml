@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/gamesummary_background"
-    android:id="@+id/gameSummaryRoot">
+    android:id="@+id/gameSummaryPageRoot">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -22,16 +22,27 @@
             android:paddingRight="15dp" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/gameTimeRoot"
+        android:id="@+id/gameTimeViewRoot"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-        <TextView
-            android:text="Tutaj wyświetli się czas gry"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/gameTimeContent"
-            android:layout_centerInParent="true"
-            android:gravity="center" />
+            android:id="@+id/gameTimeContentRoot"
+            android:layout_centerInParent="true">
+            <TextView
+                android:text="Całkowity czas gry: "
+                android:id="@+id/gameTimeLabel"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gameTimeContent"
+                local:MvxBind="Text ElapsedTime" />
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
