@@ -18,8 +18,9 @@ namespace SZWMar2018.Droid.Views.Game
             var view = this.BindingInflate(Resource.Layout.fragment_taskgamestep, null);
 
             var transaction = Activity.FragmentManager.BeginTransaction();
-            var mapFragment = new MapFragment();
-            transaction.Replace(Resource.Id.mapFragmentPlaceholder, new MapFragment());
+            var mapFragment = MapFragment.NewInstance(new GoogleMapOptions()
+                .InvokeMapType(GoogleMap.MapTypeNormal));
+            transaction.Replace(Resource.Id.mapFragmentPlaceholder, mapFragment);
             transaction.Commit();
 
             mapFragment.GetMapAsync(this);
