@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="imiolak.szwmar18" android:versionCode="1" android:versionName="0.8" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="imiolak.szwmar18" android:versionName="0.9" android:installLocation="preferExternal" android:versionCode="2">
 	<uses-sdk android:minSdkVersion="21" />
 	<uses-feature android:glEsVersion="0x00020000" android:required="true" />
 	<uses-permission android:name="android.permission.INTERNET" />
