@@ -35,7 +35,6 @@
         android:layout_height="0dp"
         android:id="@+id/mapFragmentPlaceholder"
         android:layout_weight="1"
-        android:layout_marginBottom="7dp"
         android:layout_marginTop="7dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp" />
@@ -45,7 +44,8 @@
         android:id="@+id/taskPasswordReplyRoot"
         android:rowCount="2"
         android:columnCount="2"
-        local:MvxBind="Visibility Visibility(PasswordReplyVisible)">
+        local:MvxBind="Visibility Visibility(PasswordReplyVisible)"
+        android:layout_marginTop="7dp">
         <TextView
             android:text="Hasło: "
             android:id="@+id/taskPasswordLabel"
