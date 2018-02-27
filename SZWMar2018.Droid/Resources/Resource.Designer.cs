@@ -341,8 +341,8 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070027
 			public const int backNavigation = 2131165223;
 			
-			// aapt resource value: 0x7f070038
-			public const int contentFrame = 2131165240;
+			// aapt resource value: 0x7f07003a
+			public const int contentFrame = 2131165242;
 			
 			// aapt resource value: 0x7f07000d
 			public const int dark = 2131165197;
@@ -452,20 +452,26 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f07002c
 			public const int taskGameStepRoot = 2131165228;
 			
-			// aapt resource value: 0x7f070032
-			public const int taskPasswordContent = 2131165234;
+			// aapt resource value: 0x7f070033
+			public const int taskPasswordContent = 2131165235;
 			
-			// aapt resource value: 0x7f070031
-			public const int taskPasswordLabel = 2131165233;
+			// aapt resource value: 0x7f070032
+			public const int taskPasswordLabel = 2131165234;
 			
 			// aapt resource value: 0x7f070030
 			public const int taskPasswordReplyRoot = 2131165232;
 			
-			// aapt resource value: 0x7f070034
-			public const int taskReplyContent = 2131165236;
+			// aapt resource value: 0x7f070031
+			public const int taskPasswordRoot = 2131165233;
 			
-			// aapt resource value: 0x7f070033
-			public const int taskReplyLabel = 2131165235;
+			// aapt resource value: 0x7f070036
+			public const int taskReplyContent = 2131165238;
+			
+			// aapt resource value: 0x7f070035
+			public const int taskReplyLabel = 2131165237;
+			
+			// aapt resource value: 0x7f070034
+			public const int taskReplyRoot = 2131165236;
 			
 			// aapt resource value: 0x7f07002e
 			public const int taskSummary = 2131165230;
@@ -476,14 +482,14 @@ namespace SZWMar2018.Droid
 			// aapt resource value: 0x7f070006
 			public const int terrain = 2131165190;
 			
-			// aapt resource value: 0x7f070036
-			public const int textContentScrollView = 2131165238;
+			// aapt resource value: 0x7f070038
+			public const int textContentScrollView = 2131165240;
+			
+			// aapt resource value: 0x7f070039
+			public const int textGameStepContent = 2131165241;
 			
 			// aapt resource value: 0x7f070037
-			public const int textGameStepContent = 2131165239;
-			
-			// aapt resource value: 0x7f070035
-			public const int textGameStepRoot = 2131165237;
+			public const int textGameStepRoot = 2131165239;
 			
 			// aapt resource value: 0x7f07000b
 			public const int wide = 2131165195;
