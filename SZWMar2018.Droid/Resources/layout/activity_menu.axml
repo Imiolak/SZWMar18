@@ -36,15 +36,15 @@
                 android:gravity="center"
                 android:id="@+id/startGameButton"
                 local:MvxBind="Click StartGameCommand"
-                android:background="@android:color/holo_green_light"
-                android:fadingEdge="vertical" />
+                android:backgroundTint="#ff008000" />
             <Button
                 android:text="Jak Grać?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/howToPlayButton"
                 android:gravity="center"
-                local:MvxBind="Click ActionNotImplementedCommand" />
+                local:MvxBind="Click ActionNotImplementedCommand"
+                android:visibility="gone" />
             <Button
                 android:text="O Skarbku"
                 android:layout_width="match_parent"
