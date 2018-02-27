@@ -5,27 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/gameViewRoot">
-    <FrameLayout
-        android:id="@+id/gameStepContainer"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameViewHeader">
+        <ImageView
+            android:src="@drawable/gameview_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameHeaderImage"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
-    <fragment
-        class="SZWMar2018.Droid.Views.Game.GameStepNavigationFragment"
-        android:id="@+id/gameStepNavigationFragment"
-        android:tag="gameStepNavigationFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:id="@+id/gameViewContent"
+        android:layout_weight="1"
+        android:layout_margin="7dp">
+        <FrameLayout
+            android:id="@+id/gameStepContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
     <LinearLayout
-        android:id="@+id/gamePageRoot"
+        android:id="@+id/gameViewFooter"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <fragment
+            class="SZWMar2018.Droid.Views.Game.GameStepNavigationFragment"
+            android:id="@+id/gameStepNavigationFragment"
+            android:tag="gameStepNavigationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <Button
             local:MvxBind="Click ResetGameCommand"
-            android:text="Reset"
+            android:text="Reset Game"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/restGameButton" />
+            android:id="@+id/restGameButton"
+            android:visibility="gone" />
     </LinearLayout>
 </LinearLayout>

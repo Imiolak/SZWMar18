@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Dziękujemy za ukończenie gry, nanananaf fgaskdjhfas dfaskjlhas dfkjhsd fksjhha sdfl..."
+            android:text="Gratulację, Wasz udział w konspiracji zakończył się powodzeniem. Poniżej znajduje się podsumowanie czasu gry. Pokaż tą stronę organizatorowi."
             android:gravity="center"
             android:paddingLeft="15dp"
             android:paddingRight="15dp" />

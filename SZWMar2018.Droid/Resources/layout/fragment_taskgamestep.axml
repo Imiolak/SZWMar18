@@ -5,13 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/taskGameStepRoot">
-    <TextView
-        android:text="Summary"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/taskSummary"
-        local:MvxBind="Text TaskSummary" />
-    <!--<fragment
+        android:id="@+id/taskSummaryRoot">
+        <TextView
+            android:text="Summary"
+            android:id="@+id/taskSummary"
+            local:MvxBind="Text TaskSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+<!--<fragment
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/taskMap"
@@ -28,7 +34,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/mapFragmentPlaceholder"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,7 +56,8 @@
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
-            local:MvxBind="Text Password" />
+            local:MvxBind="Text Password"
+            android:layout_marginLeft="15px" />
         <TextView
             android:text="Odzew: "
             android:id="@+id/taskReplyLabel"
@@ -57,6 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
-            local:MvxBind="Text Reply" />
+            local:MvxBind="Text Reply"
+            android:layout_marginLeft="15px" />
     </GridLayout>
 </LinearLayout>

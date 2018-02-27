@@ -14,7 +14,7 @@
         android:id="@+id/backNavigation"
         android:layout_weight="1">
         <Button
-            android:text="Wróć"
+            android:text="Tekst"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/previousStepButton"
@@ -27,7 +27,7 @@
         android:id="@+id/forwardNavigation"
         android:layout_weight="1">
         <Button
-            android:text="Dalej"
+            android:text="Zadania"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
