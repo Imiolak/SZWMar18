@@ -39,10 +39,9 @@
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Interactions\DialogInteraction.cs" />
     <Compile Include="Models\GamePart.cs" />
-    <Compile Include="Models\GoToLocationObjectiveStep.cs" />
-    <Compile Include="Models\Objective.cs" />
-    <Compile Include="Models\ObjectiveStepBase.cs" />
-    <Compile Include="Models\TextObjectiveStep.cs" />
+    <Compile Include="Models\GameStepBase.cs" />
+    <Compile Include="Models\TaskGameStep.cs" />
+    <Compile Include="Models\TextGameStep.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ApplicationVariableService.cs" />
     <Compile Include="Services\DataServiceBase.cs" />
@@ -51,21 +50,12 @@
     <Compile Include="Services\IApplicationVariableService.cs" />
     <Compile Include="Services\IGamePartService.cs" />
     <Compile Include="Services\IGameStateService.cs" />
-    <Compile Include="Services\IObjectiveService.cs" />
-    <Compile Include="Services\ObjectiveService.cs" />
-    <Compile Include="ViewModels\Game\AnswerViewModel.cs" />
     <Compile Include="ViewModels\Game\GameStepNavigationViewModel.cs" />
     <Compile Include="ViewModels\Game\GameViewModel.cs" />
-    <Compile Include="ViewModels\Game\ObjectiveNavigationViewModel.cs" />
-    <Compile Include="ViewModels\Game\ObjectiveStepViewModel.cs" />
-    <Compile Include="Models\QuestionObjectiveStep.cs" />
-    <Compile Include="ViewModels\Game\QuestionObjectiveStepViewModel.cs" />
     <Compile Include="ViewModels\Game\TaskGameStepViewModel.cs" />
     <Compile Include="ViewModels\Game\TextGameStepViewModel.cs" />
-    <Compile Include="ViewModels\Game\GoToLocationObjectiveStepViewModel.cs" />
     <Compile Include="ViewModels\Menu\GameSummaryViewModel.cs" />
     <Compile Include="ViewModels\Menu\MenuViewModel.cs" />
-    <Compile Include="ViewModels\Game\ObjectiveStepNavigationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">

@@ -191,15 +191,10 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\Game\GameActivity.cs" />
-    <Compile Include="Views\Game\ObjectiveNavigationFragment.cs" />
-    <Compile Include="Views\Game\ObjectiveStepViewFragment.cs" />
-    <Compile Include="Views\Game\QuestionObjectiveStepFragment.cs" />
     <Compile Include="Views\Game\TaskGameStepFragment.cs" />
     <Compile Include="Views\Game\TextGameStepFragment.cs" />
-    <Compile Include="Views\Game\GoToLocationObjectiveStepFragment.cs" />
     <Compile Include="Views\Menu\GameSummaryActivity.cs" />
     <Compile Include="Views\Menu\MenuActivity.cs" />
-    <Compile Include="Views\Game\ObjectiveStepNavigationFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -211,19 +206,7 @@
     <AndroidResource Include="Resources\layout\activity_game.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\fragment_objectivestepnavigation.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\fragment_objectivenavigation.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\fragment_objectivestepview.axml" />
     <AndroidResource Include="Resources\layout\fragment_textgamestep.axml" />
-    <AndroidResource Include="Resources\layout\fragment_questionobjectivestep.axml" />
-    <AndroidResource Include="Resources\layout\item_answer.axml" />
-    <AndroidResource Include="Resources\layout\fragment_gotolocationobjectivestep.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_gamestepnavigation.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -244,9 +227,6 @@
     <AndroidResource Include="Resources\drawable\splash.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\answer_background.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -255,9 +235,7 @@
       <Name>SZWMar2018.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\json\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\menu_background.png" />
   </ItemGroup>

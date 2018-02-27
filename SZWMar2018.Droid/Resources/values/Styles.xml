@@ -2,9 +2,4 @@
 <resources>
   <style name="SZWMar2018AppStyle" parent="@android:Theme.Material.NoActionBar">
   </style>
-  
-  <style name="AnswerButton" parent="@android:style/Widget.Material.Button">
-    <item name="android:background">@drawable/answer_background</item>
-    <item name="android:button">@null</item>
-  </style>
 </resources>
